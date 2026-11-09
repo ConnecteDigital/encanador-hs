@@ -410,3 +410,21 @@ body:has(.nav-mobile[open]) .float-cta { display: none; }
 /* topo da home sem camada de cor: texto branco e selos com fundo próprio para ler sobre a foto */
 .hero-home .hero-center .hero-lead { color: #fff; }
 .hero-home .hero-badges li { background: rgba(5, 13, 31, .72); border-color: rgba(255, 255, 255, .25); }
+
+/* destaque do título e dos botões no topo da home */
+.hero-home .hero-center h1 {
+  font-size: clamp(2.5rem, 6.6vw, 4.8rem); line-height: 1.04;
+  text-shadow: 3px 3px 0 #050d1f, 0 0 24px rgba(0, 0, 0, .9);
+}
+.hero-home .hero-center h1 em {
+  display: inline; color: #fff; background: var(--blue-600); padding: 0 .22em; border-radius: 10px;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  text-shadow: 2px 2px 0 rgba(5, 13, 31, .6); box-shadow: 0 10px 30px -8px rgba(0, 0, 0, .7);
+}
+.hero-home .cta-buttons .btn { font-size: 1.35rem; padding: 20px 34px; border-width: 3px; }
+.hero-home .cta-buttons .btn-wa { border-color: #fff; box-shadow: 0 0 0 4px rgba(18, 140, 74, .35), 0 14px 32px -8px rgba(0, 0, 0, .8); }
+.hero-home .cta-buttons .btn-call { box-shadow: 0 0 0 4px rgba(255, 255, 255, .3), 0 14px 32px -8px rgba(0, 0, 0, .8); }
+@media (max-width: 600px) {
+  .hero-bg { object-position: 28% 30%; }
+  .hero-home .cta-buttons .btn { font-size: 1.25rem; padding: 18px 20px; }
+}
