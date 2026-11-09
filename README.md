@@ -23,6 +23,5 @@ Cada serviço vira `/servicos/<slug>/`, cada bairro vira `/encanador-em-<slug>/`
 
 ## Pendências (dados provisórios)
 
-- `src/data/site.ts`: GTM está vazio. Colocar o ID do GTM do Encanador HS.
 - `src/assets/fotos/`: fotos dos serviços ainda são provisórias (herdadas do site base). Subir fotos reais em `fotos/<slug>/` e apagar o `.jpg` correspondente em `src/assets/fotos/`.
 - `astro.config.mjs` e `site.url`: domínio `encanadorhs.com.br` (confirmar).

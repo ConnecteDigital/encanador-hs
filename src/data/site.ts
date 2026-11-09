@@ -26,5 +26,5 @@ export function whatsappUrl(message: string = DEFAULT_WHATSAPP_MESSAGE) {
 }
 
 // Contêiner do Google Tag Manager: único rastreamento do site (tag do Google e conversões ficam nele)
-// TODO: colocar o ID do GTM do Encanador HS (ex.: 'GTM-XXXXXXX'). Vazio = sem rastreamento.
-export const gtmId = '';
+// Contêiner do Google Tag Manager do Encanador HS (conversões ficam nele)
+export const gtmId = 'GTM-NL6KXZBM';
