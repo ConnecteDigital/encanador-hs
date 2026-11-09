@@ -1,8 +1,7 @@
 // Dados centrais da empresa. Altere aqui e o site inteiro é atualizado.
 
 // Formato: 55 + DDD + número, só dígitos
-// TODO: trocar pelo WhatsApp/telefone do Encanador HS (número provisório)
-const PHONE_DIGITS = '5511900000000';
+const PHONE_DIGITS = '5511965029877';
 
 export const site = {
   name: 'Encanador HS',
@@ -12,7 +11,8 @@ export const site = {
   phoneDigits: PHONE_DIGITS,
   // Exibição: (11) 90000-0000
   phoneDisplay: `(${PHONE_DIGITS.slice(2, 4)}) ${PHONE_DIGITS.slice(4, 9)}-${PHONE_DIGITS.slice(9)}`,
-  tel: `tel:+${PHONE_DIGITS}`,
+  // botão de ligar: 0 + DDD + número (ex.: tel:011965029877)
+  tel: `tel:0${PHONE_DIGITS.slice(2)}`,
   arrivalMinutes: 20,
   description:
     'Encanador 24 horas em São Paulo. Conserto de vazamentos, canos PVC, PPR, cobre e CPVC, desentupimento, registros, caixa d’água e mais. Chegamos em até 20 minutos, com garantia.',

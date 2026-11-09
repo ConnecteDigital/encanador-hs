@@ -7,6 +7,7 @@ import FaqList from '../components/FaqList.astro';
 import Icon from '../components/Icon.astro';
 import Gallery from '../components/Gallery.astro';
 import { Image } from 'astro:assets';
+import fotoFundo from '../assets/hero.jpg';
 import { fotoDoServico } from '../data/fotos';
 import { site } from '../data/site';
 import { servicos } from '../data/servicos';
@@ -51,12 +52,12 @@ const posts = (await getCollection('blog'))
 >
   <section class="hero hero-home">
     {
-      fotoEquipe && (
+      (
         <Image
           class="hero-bg"
-          src={fotoEquipe.src}
+          src={fotoFundo}
           alt=""
-          widths={[480, 800, 1200, 1600]}
+          widths={[480, 800, 1280]}
           sizes="100vw"
           loading="eager"
           fetchpriority="high"
