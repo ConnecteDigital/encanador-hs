@@ -47,7 +47,7 @@ const article = {
   <section class="hero page-hero">
     <div class="container article">
       <Breadcrumbs items={crumbs} />
-      <time datetime={post.data.data.toISOString()} style="color:#9fb7dd">{post.data.data.toLocaleDateString('pt-BR')}</time>
+      <time datetime={post.data.data.toISOString()} style="color:#aaa59e">{post.data.data.toLocaleDateString('pt-BR')}</time>
       <h1 style="text-transform:none">{post.data.titulo}</h1>
       <p class="hero-lead">{post.data.descricao}</p>
     </div>
@@ -58,7 +58,7 @@ const article = {
       <div class="side-card" style="margin-top:40px">
         <h2>Precisa de ajuda agora?</h2>
         <p>
-          {servico ? <>Conheça nosso serviço de <a href={`/servicos/${servico.slug}/`} style="color:#5fd0ff">{servico.nome.toLowerCase()}</a>. </> : null}
+          {servico ? <>Conheça nosso serviço de <a href={`/servicos/${servico.slug}/`} style="color:#ffa552">{servico.nome.toLowerCase()}</a>. </> : null}
           Atendemos 24 horas em São Paulo e chegamos em até {site.arrivalMinutes} minutos.
         </p>
         <CtaButtons size="md" />

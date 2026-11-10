@@ -1,27 +1,27 @@
 import type { ImageMetadata } from 'astro';
 
-// Fotos reais de serviços feitos, uma por serviço (src/assets/fotos/<slug>.jpg).
+// Fotos ilustrativas dos serviços (geradas por IA), uma por serviço (src/assets/fotos/<slug>.jpg).
 // Os originais ficam em fotos/<slug>/ na raiz do repositório.
 const arquivos = import.meta.glob<{ default: ImageMetadata }>('../assets/fotos/*.jpg', { eager: true });
 
 const alts: Record<string, string> = {
-  desentupimento: 'Profissional do Encanador HS usando máquina de desentupimento em um imóvel',
-  'conserto-de-tubulacao-pvc': 'Conserto de tubulação PVC embutida com registro novo instalado na parede',
-  'furo-em-cano-pvc': 'Cano PVC furado consertado com conexões novas dentro da parede',
-  'furo-em-cano-de-cobre': 'Canos de cobre emendados com luvas de latão após conserto de furo',
-  'conserto-de-cano-ppr': 'Trecho de cano trocado dentro da parede durante conserto de vazamento',
-  'conserto-de-tubulacao-cpvc': 'Conexão nova instalada em tubulação de água após conserto',
-  'conserto-de-prumada-pvc': 'Prumada de PVC aberta na parede com trecho substituído',
-  'conserto-de-tubulacao-de-esgoto': 'Tubulação de esgoto PVC refeita junto à parede do banheiro',
-  'troca-de-registro-geral': 'Registro geral novo instalado na tubulação embutida na parede',
-  'troca-de-registro-de-chuveiro': 'Troca de registro e tubulação de chuveiro com a parede aberta',
-  'conserto-de-caixa-acoplada': 'Mecanismo novo de entrada e saída instalado dentro da caixa acoplada',
-  'valvula-hydra': 'Válvula de descarga Hydra em manutenção na parede do banheiro',
-  'sifao-de-pia': 'Sifão novo instalado embaixo da pia',
-  'troca-de-reparo-de-torneira': 'Torneira de lavatório com reparos novos instalados',
-  'instalacao-de-caixa-dagua': 'Caixas d’água instaladas na laje de um imóvel em São Paulo',
-  'instalacao-de-bomba-pressurizadora': 'Bomba instalada em reservatório de concreto',
-  'instalacao-de-filtro': 'Filtro de água instalado na entrada da tubulação',
+  desentupimento: 'Encanador usando máquina de desentupimento no ralo do banheiro',
+  'conserto-de-tubulacao-pvc': 'Encanador consertando tubulação PVC na parede aberta da cozinha',
+  'furo-em-cano-pvc': 'Cano PVC furado na parede sendo consertado com conexões novas',
+  'furo-em-cano-de-cobre': 'Conserto de cano de cobre com luvas de latão dentro da parede',
+  'conserto-de-cano-ppr': 'Encanador soldando cano PPR com termofusora',
+  'conserto-de-tubulacao-cpvc': 'Conserto de tubulação CPVC de água quente na parede',
+  'conserto-de-prumada-pvc': 'Encanador trocando trecho da prumada de PVC no shaft do prédio',
+  'conserto-de-tubulacao-de-esgoto': 'Conserto de tubulação de esgoto PVC enterrada no quintal',
+  'troca-de-registro-geral': 'Registro geral novo sendo instalado na tubulação de água',
+  'troca-de-registro-de-chuveiro': 'Troca de registro de chuveiro na parede do banheiro',
+  'conserto-de-caixa-acoplada': 'Mecanismo novo sendo instalado dentro da caixa acoplada',
+  'valvula-hydra': 'Encanador fazendo manutenção na válvula de descarga do banheiro',
+  'sifao-de-pia': 'Sifão novo sendo instalado embaixo da pia da cozinha',
+  'troca-de-reparo-de-torneira': 'Troca de reparo de torneira de lavatório',
+  'instalacao-de-caixa-dagua': 'Encanador instalando caixa d’água na laje de uma casa em São Paulo',
+  'instalacao-de-bomba-pressurizadora': 'Instalação de bomba pressurizadora ao lado da caixa d’água',
+  'instalacao-de-filtro': 'Instalação de filtro de água na entrada da tubulação',
 };
 
 export interface Foto {

@@ -23,5 +23,5 @@ Cada serviço vira `/servicos/<slug>/`, cada bairro vira `/encanador-em-<slug>/`
 
 ## Pendências (dados provisórios)
 
-- `src/assets/fotos/`: fotos dos serviços ainda são provisórias (herdadas do site base). Subir fotos reais em `fotos/<slug>/` e apagar o `.jpg` correspondente em `src/assets/fotos/`.
+- `src/assets/fotos/`: fotos dos serviços geradas por IA (ilustrativas). Quando tiver fotos reais do HS, subir em `fotos/<slug>/`, apagar o `.jpg` correspondente em `src/assets/fotos/` e rodar o build.
 - `astro.config.mjs` e `site.url`: domínio `encanadorhs.com.br` (confirmar).
